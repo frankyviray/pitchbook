@@ -16,22 +16,47 @@
     <!-- Our own CSS stylesheet -->
     <link rel="stylesheet" href="assets/css/styles.css" media="screen">
 
+<style>
+    .button {
+        background-color: #4aaaa5;
+        /* Yellow */
+        border: none;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+
+    .button1 {
+        border-radius: 2px;
+    }
+</style>
 </head>
 
 <body>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
 
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                     data-target="#page-nav-collapse" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html" id="logo">Ace Industrial</a>
+                <a class="navbar-brand" href="index.html" id="logo">Ace Industrial</a> -->
+                <button class="button button1" onclick="goBack()">Go Back</button>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -45,18 +70,19 @@
     <!-- Start of container -->
     <main class="container">
         <section class="row">
-            <div class="col-md-8">
+            <div class="col-md-12">
                 <article class="block">
-                    <h1 class="block-header"> Drill Bit Introduction</h1>
+                    <center><h1 class="block-header"> Drill Bit Introduction</h1></center>
                     <hr />
                     <img src="assets/imgs/VIP29P.jpg" alt="" id="about-image" />
-                    <h2>Alright forget about the drill bits, I’ll run you by my last item here, if it makes sense great, if not no worries, can
-                    you hear me ok?!</h2>
+                    <h1>Alright forget about the drill bits, I’ll run you by my last item here, if it makes sense great, if not no worries, can
+                    you hear me ok?!</h1>
+                    <h1>(Let Him Respond)</h1>
                 </article>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-12">
                 <aside class="block">
-                    <h1 class="block-header connect-header">Your Option</h1>
+                    <center><h1 class="block-header connect-header">Your Option</h1></center>
                     <hr />
                     <div id="images">
                         <a class="btn btn-success btn-lg" href="344yes1.html" role="button">YES</a>
